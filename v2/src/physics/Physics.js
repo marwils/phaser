@@ -129,7 +129,7 @@ Phaser.Physics.prototype = {
 
         if (this.config.hasOwnProperty('box2d') && this.config['box2d'] === true && Phaser.Physics.hasOwnProperty('BOX2D'))
         {
-            this.box2d = new Phaser.Physics.BOX2D(this.game, this.config);
+            this.box2d = new Phaser.Physics.Box2D(this.game, this.config);
         }
 
         if (this.config.hasOwnProperty('matter') && this.config['matter'] === true && Phaser.Physics.hasOwnProperty('Matter'))
